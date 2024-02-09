@@ -15,6 +15,7 @@ As you may know, Input Shaping can allow for substantial speed and print quality
 We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple to installation and configuration of Klipper.
 
 **What if I need to return to stock?**
+
 Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 15 minutes. Please see the section "Reverting to Stock Prusa Firmware".
 
 ## Hardware Required
