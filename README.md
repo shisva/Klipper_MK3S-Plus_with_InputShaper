@@ -1,5 +1,33 @@
-# Kliper on Prusa MK3s
-Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://github.com/Rat-OS/RatOS-configuration
+# Input Shaping for the MK3S/+, an easy method for a powerful upgrade
+This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
+
+As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer.
+
+**There are several reasons you should try this upgrade:**
+1. Speed - As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer. It's all the rage right now in the 3D Printing community.
+2. Low Cost - It's inexpensive, requiring just $50-100 in hardware, which is a reasonable savings compared to the Prusa MKS3.5 Upgrade Kit.
+3. Simplicity - We have structured our instructions and documentation to make this as simple as possible, despite the fact that Klipper is involved, and historically has been thought of as difficult to implement. Klipper is very powerful, and can be simple when implemented correctly.
+4. Easy to Return to Stock - Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 15 minutes.
+5. No Waste - Your MK3S/+ Printer will not collect dust. Many in the Prusa community recommend either buying an MK4 while selling or keeping your MK3S. This upgrade allows you to keep your printer, while substantially increasing speed, and potentially increasing print quality.
+
+**How will we do this?**
+
+We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple to installation and configuration of Klipper.
+
+**What if I need to return to stock?**
+Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 15 minutes. Please see the section "Reverting to Stock Prusa Firmware".
+
+## Hardware Required
+
+- Raspberry Pi (Zero 2 W, Raspberry Pi 3B+/4/5+)
+  _Raspberry Pi Zero W 1 is not recommended, and may not work_
+- USB Type B male to USB Type A male cable (if using a Raspberry Pi 3B+/4/5+)
+- USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W)
+- Optional, but recommended: KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration)
+- (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
+- 
+
+PENDING FURTHER EDITS TO BELOW
 
 ## Pre-Check
 
