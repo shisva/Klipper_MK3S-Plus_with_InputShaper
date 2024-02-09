@@ -22,8 +22,11 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 ## Hardware Required
 
 - Raspberry Pi Zero 2 W - https://amzn.to/3ODvStE
+
   _Raspberry Pi 3B+/4/5+ will also work, but tend to be more expensive_
+
   _Raspberry Pi Zero W 1 is not recommended, and may not work_
+
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
 - Optional, but recommended: KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
