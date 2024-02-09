@@ -11,7 +11,7 @@ This project is an attempt to create simple, easy-to-follow documentation for pe
 
 **How will we do this?**
 
-We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple to installation and configuration of Klipper.
+We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper.
 
 **What if I need to return to stock?**
 
