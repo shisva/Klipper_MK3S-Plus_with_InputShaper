@@ -33,7 +33,28 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
   - Optional, but recommended.
 - (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
-- 
+-
+
+(INSTRUCTIONS SECTION)
+
+(KUSBA Specific info gathering)
+Discuss:
+1) What is the KUSBA
+2) Why we use this Rampon firmware
+3) How this whole thing works lol
+4) Link to their instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 CURRENT PROGRESS MARKER - ALL BELOW IS FROM ORIGINAL REPO
 
