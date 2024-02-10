@@ -43,6 +43,13 @@ Discuss:
 2) Why we use this Rampon firmware
 3) How this whole thing works lol
 4) Link to their instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+5) Include links for KUSBA mounts
+   
+   1) Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
+   2) Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
+   3) Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
+
+  
 
 
 
