@@ -37,6 +37,21 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 
 (INSTRUCTIONS SECTION)
 
+
+Steps I took (high level):
+1) Installed MainsailOS
+2) Created config (see my notes below for corrections)
+3) Flashed firmware
+4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
+6) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html - I need to add specific steps on where to place output of the results
+7) NEXT = Skew Correction, try both methods.
+
+
+MISC NOTES:
+-Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
+-
+
+
 (KUSBA Specific info gathering)
 Discuss:
 1) What is the KUSBA
