@@ -44,7 +44,8 @@ Steps I took (high level):
 3) Flashed firmware
 4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
 6) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html - I need to add specific steps on where to place output of the results
-7) NEXT = Skew Correction, try both methods.
+7) Skipped any extruder calibration since we already have all of this data captured in dz0ny's config files.
+8) NEXT = Skew Correction, try both methods.
 
 
 MISC NOTES:
