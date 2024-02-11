@@ -43,9 +43,10 @@ Steps I took (high level):
 2) Created config (see my notes below for corrections)
 3) Flashed firmware
 4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
+5) Calibrate mesh bed leveling from Heightmap menu. (NOTE TO SELF - Why isn't it ran automatically before a print? Is that a slicer thing I need to add, or a config item?
 6) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html - I need to add specific steps on where to place output of the results
 7) Skipped any extruder calibration since we already have all of this data captured in dz0ny's config files.
-8) NEXT = Skew Correction, try both methods.
+9) NEXT = Skew Correction, try both methods.
 
 
 MISC NOTES:
