@@ -51,7 +51,16 @@ Steps I took (high level):
 
 MISC NOTES:
 -Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
--
+-I want to add KAMP - Klipper Adaptive Meshing Purging - The only problematic issue here is we need to stay away from the magnets on the print bed as they'll cause errors in readings.
+
+Extra notes from Discord:
+-Extruder steps are already configured in the dz0ny files
+-Squish - I already have down from knowing my correct z-offset at 0.20mm first layer height
+-EM is usually configured in the filament settings in PrusaSlicer, not something I've ever touched except with special PETG projects.
+-PA - Done, but again I'd debate whether this is necessary if we already have recommended values from Prusa.
+-Retraction - Also something I've never touched on my Prusa and had no issues, so I'm using the stock slicer preset values.
+-PrusaSlicer - I can use the MK3.5 profiles if you copy them over properly, not difficult thanksfully.
+
 
 
 (KUSBA Specific info gathering)
