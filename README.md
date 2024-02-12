@@ -54,6 +54,7 @@ MISC NOTES:
 -I want to add KAMP - Klipper Adaptive Meshing Purging - The only problematic issue here is we need to stay away from the magnets on the print bed as they'll cause errors in readings.
 -KAMP requires exclude object (https://www.klipper3d.org/Exclude_Object.html#exclude-objects) which I need to add to the template.
 -Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
+-I copied the Extruder 1 page's settings from MK3.5 into my custom printer in PrusaSlicer.
 
 Extra notes from Discord:
 -Extruder steps are already configured in the dz0ny files
