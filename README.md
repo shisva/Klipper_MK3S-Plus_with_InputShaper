@@ -55,6 +55,7 @@ MISC NOTES:
 -KAMP requires exclude object (https://www.klipper3d.org/Exclude_Object.html#exclude-objects) which I need to add to the template.
 -Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
 -I copied the Extruder 1 page's settings from MK3.5 into my custom printer in PrusaSlicer.
+-2/12 - Current lack of a purge step in the Gcode causes extrusion problems! That's why that's so important. Need to figure out how to enable this.
 
 Extra notes from Discord:
 -Extruder steps are already configured in the dz0ny files
