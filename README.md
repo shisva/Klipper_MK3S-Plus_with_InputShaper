@@ -53,6 +53,7 @@ MISC NOTES:
 -Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
 -I want to add KAMP - Klipper Adaptive Meshing Purging - The only problematic issue here is we need to stay away from the magnets on the print bed as they'll cause errors in readings.
 -KAMP requires exclude object (https://www.klipper3d.org/Exclude_Object.html#exclude-objects) which I need to add to the template.
+-Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
 
 Extra notes from Discord:
 -Extruder steps are already configured in the dz0ny files
