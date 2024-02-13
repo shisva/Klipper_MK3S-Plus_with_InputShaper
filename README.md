@@ -80,7 +80,7 @@ Discuss:
    2) Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
    3) Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
 
-  
+6) Installing the Linux MCU seemed like it was unnecessary...we use the MCU on the KUSBA I think using the KUSBA's config file setting. I need to test this to verify but pretty sure we can IGNORE the instructions inside of Measuring Resonances until we get to the "Checking the setup" section.
 
 
 
