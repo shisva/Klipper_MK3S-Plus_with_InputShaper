@@ -58,6 +58,15 @@ MISC NOTES:
 -2/12 - Current lack of a purge step in the Gcode causes extrusion problems! That's why that's so important. Need to figure out how to enable this.
 -Special purge and mesh can be done using KAMP, but I don't know how to have it add it to the G Code.
 -Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
+- TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
+- 
+
+
+
+
+
+
+
 
 Extra notes from Discord:
 -Extruder steps are already configured in the dz0ny files
