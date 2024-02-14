@@ -57,7 +57,7 @@ MISC NOTES:
 -I copied the Extruder 1 page's settings from MK3.5 into my custom printer in PrusaSlicer.
 -2/12 - Current lack of a purge step in the Gcode causes extrusion problems! That's why that's so important. Need to figure out how to enable this.
 -Special purge and mesh can be done using KAMP, but I don't know how to have it add it to the G Code.
--Exclude Object setup required: https://www.youtube.com/watch?v=QTwRZ_M159Q&t=0s
+-Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
 
 Extra notes from Discord:
 -Extruder steps are already configured in the dz0ny files
