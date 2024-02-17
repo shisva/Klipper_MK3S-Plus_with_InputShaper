@@ -59,6 +59,7 @@ MISC NOTES:
 -Special purge and mesh can be done using KAMP, but I don't know how to have it add it to the G Code.
 -Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
 - TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
+- Existing PRINT_START macro is not sensible for PETG (heats to PLA temps), and also isn't sensible in a scenario where the machine is pre-heated via Preheat PETG macro.
 - 
 
 
