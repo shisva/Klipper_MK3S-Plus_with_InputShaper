@@ -60,7 +60,7 @@ MISC NOTES:
 -Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
 - TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
 - Existing PRINT_START macro is not sensible for PETG (heats to PLA temps), and also isn't sensible in a scenario where the machine is pre-heated via Preheat PETG macro.
-- 
+- Existing Macro actually doesn't work correctly at all for PETG, tries to use PLA temps entirely which is alarming. 
 
 
 
