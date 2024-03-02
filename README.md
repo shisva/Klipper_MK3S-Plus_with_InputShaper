@@ -1,8 +1,9 @@
 WORK IN PROGRESS - NOT READY
 
-# Input Shaping for the MK3S/+, an easy method for a powerful upgrade
+# Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
 
+WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury.
 
 **There are several reasons you should try this upgrade:**
 1. **Speed** - As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer. It's all the rage right now in the 3D Printing community.
@@ -25,15 +26,15 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
   - Compatible hotends: Stock, Dragon ST, Dragon HF
   - Compatible extruders: Stock, Bondtech BMG 
 - Raspberry Pi Zero 2 W - https://amzn.to/3ODvStE
-  - Raspberry Pi 3B+/4/5+ will also work, but tend to be more expensive
-  - Raspberry Pi Zero W is not recommended, and may not work
+  - Raspberry Pi 3B+/4/5+ will also work.
+  - Raspberry Pi Zero W is not recommended.
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
 - KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
   - Optional, but recommended.
 - (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
--
+- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, CONSIDER ALTERNATIVE ACCELEROMETERS
 
 (INSTRUCTIONS SECTION)
 
@@ -43,39 +44,24 @@ Steps I took (high level):
 2) Created config (see my notes below for corrections)
 3) Flashed firmware
 4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
-5) Calibrate mesh bed leveling from Heightmap menu. (NOTE TO SELF - Why isn't it ran automatically before a print? Is that a slicer thing I need to add, or a config item?
-6) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html - I need to add specific steps on where to place output of the results. NOTE: PRUSA ALREADY HAS PRE-SET RECOMMENDED "K-VALUES" ON A PER-FILAMENT-TYPE BASIS. We should use those instead if using PrusaSlicer, but I need to figure out where they're located so we can bring them over and allow users to access them easily.
-7) Skipped any extruder calibration since we already have all of this data captured in dz0ny's config files.
-9) NEXT = Skew Correction, try both methods.
+5) Added KAMP (requires exclude object)
+6) Performed Extruder Calibration
+7) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
+8) Customized PrusaSlicer (SEVERAL IMPORTANT STEPS HERE, Printer Profile, Filament Detach, Print Settings detach, bed models, bed images)
+10) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html
+11) Performed EM calibration
+12) NEXT = Skew Correction, try both methods.
+
+13) NOTE: My Home doesn't work correctly, look into this plus check this otherwise bed faults won't work right: "ONLY if you use his xy position_min and position_endstop"
 
 
 MISC NOTES:
 -Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
--I want to add KAMP - Klipper Adaptive Meshing Purging - The only problematic issue here is we need to stay away from the magnets on the print bed as they'll cause errors in readings.
--KAMP requires exclude object (https://www.klipper3d.org/Exclude_Object.html#exclude-objects) which I need to add to the template.
 -Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
--I copied the Extruder 1 page's settings from MK3.5 into my custom printer in PrusaSlicer.
--2/12 - Current lack of a purge step in the Gcode causes extrusion problems! That's why that's so important. Need to figure out how to enable this.
--Special purge and mesh can be done using KAMP, but I don't know how to have it add it to the G Code.
 -Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
 - TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
-- Existing PRINT_START macro is not sensible for PETG (heats to PLA temps), and also isn't sensible in a scenario where the machine is pre-heated via Preheat PETG macro.
-- Existing Macro actually doesn't work correctly at all for PETG, tries to use PLA temps entirely which is alarming. 
+-Retraction - Use stock slicer values
 
-
-
-
-
-
-
-
-Extra notes from Discord:
--Extruder steps are already configured in the dz0ny files
--Squish - I already have down from knowing my correct z-offset at 0.20mm first layer height
--EM is usually configured in the filament settings in PrusaSlicer, not something I've ever touched except with special PETG projects.
--PA - Done, but again I'd debate whether this is necessary if we already have recommended values from Prusa.
--Retraction - Also something I've never touched on my Prusa and had no issues, so I'm using the stock slicer preset values.
--PrusaSlicer - I can use the MK3.5 profiles if you copy them over properly, not difficult thanksfully.
 
 
 
