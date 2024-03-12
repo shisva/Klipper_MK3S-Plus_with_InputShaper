@@ -1,4 +1,4 @@
-WORK IN PROGRESS - NOT READY
+WORK IN PROGRESS - DOCUMENTATION NOT READY
 
 # Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
