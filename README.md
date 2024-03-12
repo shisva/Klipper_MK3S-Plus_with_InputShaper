@@ -25,45 +25,47 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - Prusa MK3S or MK3S+
   - Compatible hotends: Stock, Dragon ST, Dragon HF
   - Compatible extruders: Stock, Bondtech BMG 
-- Raspberry Pi Zero 2 W - https://amzn.to/3ODvStE
+- Raspberry Pi Zero 2 W - [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
   - Raspberry Pi 3B+/4/5+ will also work.
   - Raspberry Pi Zero W is not recommended.
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
-- KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
+- KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - [https://amzn.to/4bzgAzA](https://amzn.to/49QFR79)
   - Optional, but recommended.
   - Connects to the Rpi via USB
-- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, a direct-mount nozzle accelerometer could be easier, but KUSBA still wasn't bad.
+  - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
+- KUSBA Alternative: Nozzle-mountable USB Accelerometer - Untested by us: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
 
 ## High-level Procedure
+**Do not print using PrusaSlicer until Step 7!**
 
 1) Install MainsailOS to your Raspberry Pi
-2) Creat configuration using the Primary Configuration Files in this repo
+2) Create configuration using the Primary Configuration Files in this repo
 3) Flash firmware
 4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
-5) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
-6) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-7) Re-do Pressure Advice Calibration post-IS
-8) Customized PrusaSlicer for Klipper
+6) Customized PrusaSlicer for Klipper
     - Add MK3.5 printer to PrusaSlicer configuration
     - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
     - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
     - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
-    - VERY IMPORTANT: Add start and end code to your new custom printer profile:
-#
-Start Code
-```yml
-M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
-M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
-PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
-```
+    - Add start and end code to your new custom printer profile in Printer Settings, under "Custom G-Code":
+  Start Code
+  ```yml
+  M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
+  M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
+  PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
+  ```
 
-End Code
+  End Code
 
-```yml
-PRINT_END
-```
+  ```yml
+  PRINT_END
+  ```
+7) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
+8) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
+9) Re-do Pressure Advice Calibration post-IS
+
 #
 #
 #
