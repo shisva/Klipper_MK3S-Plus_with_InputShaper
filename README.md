@@ -43,9 +43,7 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 3) Flash firmware
 4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
 5) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
-6) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-7) Re-do Pressure Advice Calibration post-IS
-8) Customized PrusaSlicer for Klipper
+6) 8) Customized PrusaSlicer for Klipper
     - Add MK3.5 printer to PrusaSlicer configuration
     - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
     - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
@@ -64,6 +62,9 @@ End Code
 ```yml
 PRINT_END
 ```
+7) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
+8) Re-do Pressure Advice Calibration post-IS
+
 #
 #
 #
