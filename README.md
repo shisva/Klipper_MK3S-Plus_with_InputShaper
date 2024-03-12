@@ -61,10 +61,10 @@ PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_te
 End Code
 "PRINT_END"
 
-
-
-
-
+#
+#
+#
+#
 (DETAILED INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
 
 
