@@ -25,13 +25,13 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - Prusa MK3S or MK3S+
   - Compatible hotends: Stock, Dragon ST, Dragon HF
   - Compatible extruders: Stock, Bondtech BMG 
-- Raspberry Pi Zero 2 W - https://amzn.to/3ODvStE
+- Raspberry Pi Zero 2 W - [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
   - Raspberry Pi 3B+/4/5+ will also work.
   - Raspberry Pi Zero W is not recommended.
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
-- KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
+- KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - [https://amzn.to/4bzgAzA](https://amzn.to/49QFR79)
   - Optional, but recommended.
   - Connects to the Rpi via USB
 - NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, a direct-mount nozzle accelerometer could be easier, but KUSBA still wasn't bad.
