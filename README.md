@@ -47,16 +47,16 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 7) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
 8) Re-do Pressure Advice Calibration post-IS
 10) Customized PrusaSlicer for Klipper (SEVERAL IMPORTANT STEPS HERE, Printer Profile, Filament Detach, Print Settings detach, bed models, bed images)
-    - Add MK3.5 printer to PrusaSlicer configuration
-    - Add a custom printer for Klipper to configuration
-    - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
-    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
-    - VERY IMPORTANT: Add start and end code to your new custom printer profile:
-      -Start Code
+  - Add MK3.5 printer to PrusaSlicer configuration
+  - Add a custom printer for Klipper to configuration
+  - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
+  - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
+  - VERY IMPORTANT: Add start and end code to your new custom printer profile:
+    -Start Code
 "M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
 M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
 PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]"
-      -End Code
+    -End Code
 "PRINT_END"
 
 #
