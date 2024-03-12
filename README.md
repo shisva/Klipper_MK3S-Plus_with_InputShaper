@@ -48,7 +48,7 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
     - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
     - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
     - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
-    - Add start and end code to your new custom printer profile:
+    - Add start and end code to your new custom printer profile in Printer Settings, under "Custom G-Code":
   Start Code
   ```yml
   M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
