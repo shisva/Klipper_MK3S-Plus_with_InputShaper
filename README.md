@@ -1,6 +1,6 @@
-WORK IN PROGRESS - DOCUMENTATION NOT READY
+WORK IN PROGRESS - Up-to-date until reaching the Detailed Instructions section
 
-# Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
+# Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
 
 WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury.
@@ -14,7 +14,7 @@ WARNING: This upgrade involves the use and installation of Klipper, which is a s
 
 **How will we do this?**
 
-We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper.
+We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper. That doesn't necessarily mean it'll be easy, as implementing Klipper's Input Shaping can reveal hardware misconfigurations.
 
 **What if I need to return to stock?**
 
@@ -33,34 +33,45 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
 - KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
   - Optional, but recommended.
-- (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
-- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, CONSIDER ALTERNATIVE ACCELEROMETERS
+  - Connects to the Rpi via USB
+- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, a direct-mount nozzle accelerometer could be easier, but KUSBA still wasn't bad.
 
-(INSTRUCTIONS SECTION)
+## High-level Procedure
+
+1) Install MainsailOS to your Raspberry Pi
+2) Creat configuration using the Primary Configuration Files in this repo
+3) Flash firmware
+4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
+5) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
+6) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
+7) Re-do Pressure Advice Calibration post-IS
+8) Customized PrusaSlicer for Klipper
+    - Add MK3.5 printer to PrusaSlicer configuration
+    - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
+    - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
+    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
+    - VERY IMPORTANT: Add start and end code to your new custom printer profile:
+#
+Start Code
+```yml
+M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
+M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
+PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
+```
+
+End Code
+
+```yml
+PRINT_END
+```
+#
+#
+#
+#
+(DETAILED INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
 
 
-Steps I took (high level):
-1) Installed MainsailOS
-2) Created config (see my notes below for corrections)
-3) Flashed firmware
-4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
-5) Added KAMP (requires exclude object)
-6) Performed Extruder Calibration
-7) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-8) Customized PrusaSlicer (SEVERAL IMPORTANT STEPS HERE, Printer Profile, Filament Detach, Print Settings detach, bed models, bed images)
-10) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html
-11) Performed EM calibration
-12) NEXT = Skew Correction, try both methods.
 
-13) NOTE: My Home doesn't work correctly, look into this plus check this otherwise bed faults won't work right: "ONLY if you use his xy position_min and position_endstop"
-
-
-MISC NOTES:
--Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
--Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
--Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
-- TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
--Retraction - Use stock slicer values
 
 
 
