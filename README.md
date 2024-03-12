@@ -52,13 +52,11 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
     - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
     - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
     - VERY IMPORTANT: Add start and end code to your new custom printer profile:
-
-Start Code
+      -Start Code
 "M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
 M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
 PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]"
-
-End Code
+      -End Code
 "PRINT_END"
 
 #
