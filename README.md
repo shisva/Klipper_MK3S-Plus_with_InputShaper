@@ -55,12 +55,7 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 (DETAILED INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
 
 
-MISC NOTES:
--Make sure Pause and Resume still work: https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/pause_resume_filament.html
--Implement SKEW_PROFILE LOAD=my_skew_profile into start Gcode.
--Exclude Object setup required: https://www.klipper3d.org/Exclude_Object.html
-- TONS of resources here, including Pinda temperature compensation: https://github.com/PrusaOwners/prusaowners/wiki/Klipper
--Retraction - Use stock slicer values
+
 
 
 
