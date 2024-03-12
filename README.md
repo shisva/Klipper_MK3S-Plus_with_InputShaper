@@ -33,28 +33,26 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
 - KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - https://amzn.to/4bzgAzA
   - Optional, but recommended.
-- (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
-- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, CONSIDER ALTERNATIVE ACCELEROMETERS
+  - Connects to the Rpi via USB
+- NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, a direct-mount nozzle accelerometer could be easier, but KUSBA still wasn't bad.
 
-(INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
+## High-level Procedure
 
-
-
-
-Steps I took (high level):
-1) Installed MainsailOS
-2) Created config (see my notes below for corrections)
-3) Flashed firmware
-4) Did sanity check and PID tuning steps (see my notes, need to mention we don't have end stops)
-5) Added KAMP (requires exclude object)
-6) Performed Extruder Calibration
+1) Install MainsailOS to your Raspberry Pi
+2) Creat configuration using the Primary Configuration Files in this repo
+3) Flash firmware
+4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
+5) Install KAMP add-on
+6) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
 7) Performed Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-8) Customized PrusaSlicer (SEVERAL IMPORTANT STEPS HERE, Printer Profile, Filament Detach, Print Settings detach, bed models, bed images)
-10) Performed PA using this guide: https://ellis3dp.com/Print-Tuning-Guide/articles/pressure_linear_advance/introduction.html
-11) Performed EM calibration
-12) NEXT = Skew Correction, try both methods.
+8) Re-do Pressure Advice Calibration post-IS
+10) Customized PrusaSlicer for Klipper (SEVERAL IMPORTANT STEPS HERE, Printer Profile, Filament Detach, Print Settings detach, bed models, bed images)
 
-13) NOTE: My Home doesn't work correctly, look into this plus check this otherwise bed faults won't work right: "ONLY if you use his xy position_min and position_endstop"
+
+
+
+
+(DETAILED INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
 
 
 MISC NOTES:
