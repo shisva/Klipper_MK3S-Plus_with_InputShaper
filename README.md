@@ -37,6 +37,7 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, a direct-mount nozzle accelerometer could be easier, but KUSBA still wasn't bad.
 
 ## High-level Procedure
+**Do not print using PrusaSlicer until Step 7!**
 
 1) Install MainsailOS to your Raspberry Pi
 2) Creat configuration using the Primary Configuration Files in this repo
