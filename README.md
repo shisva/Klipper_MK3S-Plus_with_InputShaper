@@ -1,6 +1,6 @@
 WORK IN PROGRESS - DOCUMENTATION NOT READY
 
-# Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
+# Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
 
 WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury.
@@ -14,7 +14,7 @@ WARNING: This upgrade involves the use and installation of Klipper, which is a s
 
 **How will we do this?**
 
-We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper.
+We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper. That doesn't necessarily mean it'll be easy, as implementing Klipper's Input Shaping can reveal hardware misconfigurations.
 
 **What if I need to return to stock?**
 
@@ -36,7 +36,9 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - (HOW DOES THE KUSBA CONNECT TO THE PI? I actually don't fully know) FIXME
 - NOTE 3/1/2024 - KUSBA MOUNTS I USED WERE NOT VERY GOOD, CONSIDER ALTERNATIVE ACCELEROMETERS
 
-(INSTRUCTIONS SECTION)
+(INSTRUCTIONS SECTION) - UNDER CONSTRUCTION
+
+
 
 
 Steps I took (high level):
