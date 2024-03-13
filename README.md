@@ -23,8 +23,8 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 ## Hardware Required
 
 - Prusa MK3S or MK3S+
-  - Compatible hotends: Stock, Dragon ST, Dragon HF
-  - Compatible extruders: Stock, Bondtech BMG 
+  - Compatible hotends: Stock, Dragon ST, Dragon HF, Revo, many others are also supported by Klipper itself, but this repo doesn't have the example code,so check elsewhere.
+  - Compatible extruders: Stock, Bondtech BMG, many others are also supported by Klipper itself, but this repo doesn't have the example code, so check elsewhere.
 - Raspberry Pi Zero 2 W - [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
   - Raspberry Pi 3B+/4/5+ will also work.
   - Raspberry Pi Zero W is not recommended.
