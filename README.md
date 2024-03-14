@@ -43,7 +43,8 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 1) Install MainsailOS to your Raspberry Pi
 2) Create configuration using the Primary Configuration Files in this repo
 3) Flash firmware
-4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
+    - Use USB method, serial method may only be necessary for some users
+5) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
 6) Customize PrusaSlicer for Klipper
     - Add MK3.5 printer to PrusaSlicer configuration
     - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
