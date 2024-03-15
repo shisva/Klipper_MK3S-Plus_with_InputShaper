@@ -46,8 +46,8 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 2) Create configuration using the Primary Configuration Files in this repo
 3) Flash firmware
     - Use USB method, serial method may only be necessary for some users
-5) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
-6) Customize PrusaSlicer for Klipper
+4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
+5) Customize PrusaSlicer for Klipper
     - Add MK3.5 printer to PrusaSlicer configuration
     - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
     - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
@@ -122,7 +122,35 @@ sudo service klipper start
 
 If this process fails, it is possible that you may need to connect via the Serial port, which is a more involved process, requiring some hardware modification. TO BE UPDATED FOR INSTRUCTIONS OR LINKS
 
+## Step 4. Perform configuration checks
 
+1. See this page for Klipper's configuration checks: https://www.klipper3d.org/Config_checks.html
+   - End stops are not applicable
+2. PID Tuning is REQUIRED, just like with your Prusa factory firmware
+    
+## Step 5. Customize PrusaSlicer for Klipper
+1. Add MK3.5 printer to PrusaSlicer configuration from the Configuration Wizard
+2. Add custom printer in the Configuration Wizard, use whatever name you like.
+   - Firmware Type = Klipper
+   - Bed Shape = 250mm x 210mm
+   - Import Bed Texture and Model Files - Located in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`
+   - Max Print Height = 210mm
+4. Copy the factory Prusa printing profiles:
+   - For "Print Settings" Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
+   - Rename the newly detached presets, you can now use this for your Klipper Printer Profile.
+   - Add start and end code to your new custom printer profile in your custom printer's "Printer Settings", under "Custom G-Code". You will not use the factory start and end g-code.
+  Start Code
+  ```yml
+  M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
+  M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
+  PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
+  ```
+
+  End Code
+
+  ```yml
+  PRINT_END
+  ```
 
 (DETAILED INSTRUCTIONS SECTION) - CURRENT PROGRESS MARKER
 
@@ -165,22 +193,3 @@ Discuss:
 
 
 
-
-
- 
-
-CURRENT PROGRESS MARKER - ALL BELOW IS FROM ORIGINAL REPO
-
-
-
-
-
-## Nice things
-[Klipper mesh on print area only install guide](https://gist.github.com/ChipCE/95fdbd3c2f3a064397f9610f915f7d02)
-
-
-## Screenshots
-![image](https://user-images.githubusercontent.com/239513/141822711-2818978e-2b87-4110-9b93-e5f489c9cdc7.png)
-![image](https://user-images.githubusercontent.com/239513/141831204-89ced257-e67f-4b1f-add7-a3806cdd2617.png)
-![image](https://user-images.githubusercontent.com/239513/141831245-11476041-240d-424a-8ff8-ffd8a03c08be.png)
-![image](https://user-images.githubusercontent.com/239513/141831272-31b88652-ab3f-4978-8a4c-c54a83817dd1.png)
