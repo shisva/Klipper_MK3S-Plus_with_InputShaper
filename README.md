@@ -1,6 +1,5 @@
-WORK IN PROGRESS (99% Complete)
+WORK IN PROGRESS (99% Complete, under review)
 -
-Known Issues: PRINT_START Macro is currently configured to use KAMP, which isn't part of these instructions yet. Without KAMP, purge line won't be created. Pending whether we'll use other code or recommend KAMP.
 
 As of 3/15/2024 - Current discussion and live help can be found here: https://discord.com/channels/431557959978450984/1205590905378312293
 
