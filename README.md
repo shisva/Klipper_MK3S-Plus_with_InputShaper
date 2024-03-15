@@ -22,7 +22,7 @@ We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, 
 
 **What if I need to return to stock?**
 
-Undoing this upgrade and returning to stock Prusa firmware can be completed in under 10 minutes. Please see the section "[Reverting to Stock Prusa Firmware](https://help.prusa3d.com/downloads)".
+Undoing this upgrade and returning to stock Prusa firmware can be completed in under 10 minutes. Please see the section "[Reverting to Stock Prusa Firmware](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade/blob/main/README.md#reverting-to-stock-prusa-firmware)".
 
 ## Hardware Required
 
