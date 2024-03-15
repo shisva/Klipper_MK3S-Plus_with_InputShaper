@@ -74,7 +74,7 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 #
 #
 
-(UNDER CONSTRUCTIONS - FOLLOW THESE DETAILS STEPS AT YOUR OWN RISK)
+(Detailed instructions under review - FOLLOW THESE DETAILS STEPS AT YOUR OWN RISK)
 
 ## Step 0. Pre-Check and Expectations
 
