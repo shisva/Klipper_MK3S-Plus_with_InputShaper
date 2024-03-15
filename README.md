@@ -65,9 +65,9 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
   ```yml
   PRINT_END
   ```
-7) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
-8) Perform Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-9) Re-do Pressure Advance Calibration post-IS
+6) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
+7) Perform Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
+8) Re-do Pressure Advance Calibration post-IS
 
 #
 #
@@ -151,6 +151,26 @@ If this process fails, it is possible that you may need to connect via the Seria
   ```yml
   PRINT_END
   ```
+## Step 6. Tuning
+1. Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
+2. This step is a critcal part of implementing Klipper and cannot be skipped
+3. For Pressure Advance and Extrusion Multiplier - It is recommended to add these values in to each individual Filament Profile in PrusaSlicer. PA can be added using the Custom G-Code menu, such as `SET_PRESSURE_ADVANCE ADVANCE=.055`
+4. Once you finish tuning, try printing some test prints using the STOCK MK3S+ PROFILES.
+
+## Step 7. INPUT SHAPING :)
+1. To set some expectations, it is important that you run your input shaping tests on a very sturdy surface. Use of foam or any cushioning under your printer is not recommended, as it can skew the results, and you won't be using it after imlementing IS anyway. This process, through the resonance measurements, can also reveal potential issues with hardware misconfiguration, such as loose components, loose belts, etc, which can be time consuming to troubleshoot, but will pay off later.
+2. KUSBA instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+3. Links for KUSBA mounts
+   - Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
+   - Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
+   - Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
+4. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
+5. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
+
+## Step 8. Re-do Pressure Advance after finishing your IS setup
+8) Self Explainatory
+
+## THE END! Happy printing.
 
 (DETAILED INSTRUCTIONS SECTION) - CURRENT PROGRESS MARKER
 
@@ -177,11 +197,7 @@ Discuss:
 2) Why we use this Rampon firmware
 3) How this whole thing works lol
 4) Link to their instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
-5) Include links for KUSBA mounts
-   
-   1) Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
-   2) Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
-   3) Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
+
 
 6) Installing the Linux MCU seemed like it was unnecessary...we use the MCU on the KUSBA I think using the KUSBA's config file setting. I need to test this to verify but pretty sure we can IGNORE the instructions inside of Measuring Resonances until we get to the "Checking the setup" section.
 
