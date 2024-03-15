@@ -1,4 +1,4 @@
-WORK IN PROGRESS - Up-to-date until reaching the Detailed Instructions section
+WORK IN PROGRESS
 
 As of 3/15/2024 - Current discussion and live help can be found here: https://discord.com/channels/431557959978450984/1205590905378312293
 
