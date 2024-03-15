@@ -160,51 +160,18 @@ If this process fails, it is possible that you may need to connect via the Seria
 ## Step 7. INPUT SHAPING :)
 1. To set some expectations, it is important that you run your input shaping tests on a very sturdy surface. Use of foam or any cushioning under your printer is not recommended, as it can skew the results, and you won't be using it after imlementing IS anyway. This process, through the resonance measurements, can also reveal potential issues with hardware misconfiguration, such as loose components, loose belts, etc, which can be time consuming to troubleshoot, but will pay off later.
 2. KUSBA instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
-3. Links for KUSBA mounts
+   - Installing the Linux MCU is NOT necessary...we use the MCU on the KUSBA
+4. Links for KUSBA mounts
    - Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
    - Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
    - Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
-4. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
-5. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
+5. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
+6. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
 
 ## Step 8. Re-do Pressure Advance after finishing your IS setup
 8) Self Explainatory
 
 ## THE END! Happy printing.
-
-(DETAILED INSTRUCTIONS SECTION) - CURRENT PROGRESS MARKER
-
-#
-#
-#
-#
-#
-
-
-
-
-
-
-
-
-
-
-
-
-(KUSBA Specific info gathering)
-Discuss:
-1) What is the KUSBA
-2) Why we use this Rampon firmware
-3) How this whole thing works lol
-4) Link to their instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
-
-
-6) Installing the Linux MCU seemed like it was unnecessary...we use the MCU on the KUSBA I think using the KUSBA's config file setting. I need to test this to verify but pretty sure we can IGNORE the instructions inside of Measuring Resonances until we get to the "Checking the setup" section.
-
-
-
-
-
 
 
 
