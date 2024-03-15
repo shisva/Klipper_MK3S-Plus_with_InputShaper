@@ -128,7 +128,7 @@ If this process fails, it is possible that you may need to connect via the Seria
 
 1. See this page for Klipper's configuration checks: https://www.klipper3d.org/Config_checks.html
    - End stops are not applicable
-2. PID Tuning is REQUIRED, just like with your Prusa factory firmware
+2. PID Tuning is REQUIRED, just like with your Prusa factory firmware. Once you hit Save Config, copy paste the values at the bottom of your printer.cfg into the relevant upper sections.
     
 ## Step 5. Customize PrusaSlicer for Klipper
 1. Add MK3.5 printer to PrusaSlicer configuration from the Configuration Wizard
