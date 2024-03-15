@@ -1,4 +1,4 @@
-WORK IN PROGRESS
+WORK IN PROGRESS (99% Complete)
 -
 Known Issues: PRINT_START Macro is currently configured to use KAMP, which isn't part of these instructions yet. Without KAMP, purge line won't be created. Pending whether we'll use other code or recommend KAMP.
 
@@ -22,7 +22,7 @@ We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, 
 
 **What if I need to return to stock?**
 
-Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 15 minutes. Please see the section "Reverting to Stock Prusa Firmware".
+Undoing this upgrade and returning to stock Prusa firmware can be completed in under 10 minutes. Please see the section "[Reverting to Stock Prusa Firmware](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade/blob/main/README.md#reverting-to-stock-prusa-firmware)".
 
 ## Hardware Required
 
@@ -177,6 +177,10 @@ If this process fails, it is possible that you may need to connect via the Seria
 
 ## THE END! Happy printing.
 
+## Reverting to Stock Prusa Firmware
+1. Connect the USB cable from your printer to your PC
+2. Download Prusa's firmware from their website: https://help.prusa3d.com/downloads
+3. From PruasSlicer, Configuration > Flash Firmware. Select your file and flash.
 
 
 
