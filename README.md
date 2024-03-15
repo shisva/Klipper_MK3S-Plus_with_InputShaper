@@ -29,7 +29,8 @@ Undoing this upgrade and returning to stock Prusa firmware takes just a few step
 - Prusa MK3S or MK3S+
   - The configuration files for this project are intended for use with the STOCK hotend and extruder. Other hotends and extruders listed below are possible to use with a modified configuration, but are out of the scope of this repository. For example configurations, please see the dz0ny repository, upon which this project is based: https://github.com/dz0ny/klipper-prusa-mk3s
   - Possible hotends: Stock, Dragon ST, Dragon HF, Revo, many others are also supported by Klipper itself.
-  - Possible extruders: Stock, Bondtech BMG, many others are also supported by Klipper itself, but this repo doesn't have the example code, so check elsewhere. As with Prusa firmware, non-stock extruders require more extensive modification of the configuration.
+  - Possible extruders: Stock, Bondtech BMG, many others are also supported by Klipper itself.
+  - As with Prusa firmware, non-stock extruders require more extensive modification of the configuration.
 - Raspberry Pi Zero 2 W - [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
   - Raspberry Pi 3B+/4/5+ will also work.
   - Raspberry Pi Zero W is not recommended.
