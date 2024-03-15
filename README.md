@@ -1,4 +1,4 @@
-WORK IN PROGRESS
+WORK IN PROGRESS (99% Complete)
 -
 Known Issues: PRINT_START Macro is currently configured to use KAMP, which isn't part of these instructions yet. Without KAMP, purge line won't be created. Pending whether we'll use other code or recommend KAMP.
 
