@@ -12,7 +12,7 @@ WARNING: This upgrade involves the use and installation of Klipper, which is a s
 1. **Speed** - As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer. It's all the rage right now in the 3D Printing community.
 2. **Low Cost** - It's inexpensive, requiring just $50-100 in hardware, which is a reasonable savings compared to the Prusa MKS3.5 Upgrade Kit.
 3. **Simplicity** - We have structured our instructions and documentation to make this as simple as possible, despite the fact that Klipper is involved, and historically has been thought of as difficult to implement. Klipper is very powerful, and can be simple when implemented correctly.
-4. **Easy to Return to Stock** - Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 15 minutes.
+4. **Easy to Return to Stock** - Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 10 minutes.
 5. **No Waste** - Your MK3S/+ Printer will not collect dust. Many in the Prusa community recommend either buying an MK4 while selling or keeping your MK3S. This upgrade allows you to keep your printer, while substantially increasing speed, and potentially increasing print quality.
 
 **How will we do this?**
@@ -40,9 +40,10 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
   - Optional, but recommended.
   - Connects to the Rpi via USB
   - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
-- KUSBA Alternative: Nozzle-mountable USB Accelerometer - Untested by us: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
+- Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
+- Another alternative: https://amzn.to/3VqvN0B
 
-## High-level Procedure
+## High-level Procedures
 **Do not print using PrusaSlicer until Step 7!**
 
 1) Install MainsailOS to your Raspberry Pi
@@ -78,11 +79,12 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 #
 
 (Detailed instructions under review - FOLLOW THESE DETAILED STEPS AT YOUR OWN RISK)
+# Detailed procedures
 
 ## Step 0. Pre-Check and Expectations
 
-- Watch this YouTube video for a basic introduction into Klipper: https://www.youtube.com/watch?v=iNHta6zljoM
-- Depending on your familarity with Klipper, expect this full process (including tuning, which is the most time intensive) to take anywhere from 5-20 hours. This range is large because it depends on your own familarity with tuning procedures that Prusa normally takes care of for you. It can also be on the high side if hardware misconfiguration ends up contributuing to issues such as bad vibrations in your printer which will make Input Shaping calibration difficult until addresses. Please be prepared for this.
+- Watch this YouTube video for a basic introduction to Klipper: https://www.youtube.com/watch?v=iNHta6zljoM
+- Depending on your familarity with Klipper, expect this full process (including tuning, which is the most time intensive) to take anywhere from 5-20 hours. This range is large because it depends on your own familarity with tuning procedures that Prusa normally takes care of for you. It can also be on the high side if hardware misconfiguration contributes to issues such as bad vibrations in your printer which will make Input Shaping calibration difficult until addresses. Please be prepared for this.
 - Throughtout this process, it is recommended you reference 
 - Get Z offset value from your current firmware (Menu -> Calibration -> Z-offset), you will need it for the Klipper config.
 - Your bed needs to be perpendicular (based on Prusa XYZ Calibration results). An uneven printer means you need to fix the physical hardware first and re-visit the assembly instructions. If not you will have to do the skew calibration before printing or you risk crashing your nozzle to the bed.
