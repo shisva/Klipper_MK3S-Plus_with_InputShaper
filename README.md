@@ -41,6 +41,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
   - Connects to the Rpi via USB
   - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
 - KUSBA Alternative: Nozzle-mountable USB Accelerometer - Untested by us: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
+- Cheaper alternative: https://amzn.to/3VqvN0B
 
 ## High-level Procedure
 **Do not print using PrusaSlicer until Step 7!**
