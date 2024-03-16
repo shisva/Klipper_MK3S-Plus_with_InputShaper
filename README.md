@@ -43,7 +43,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 - Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
 - Another alternative: https://amzn.to/3VqvN0B
 
-## High-level Procedure
+## High-level Procedures
 **Do not print using PrusaSlicer until Step 7!**
 
 1) Install MainsailOS to your Raspberry Pi
@@ -79,6 +79,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 #
 
 (Detailed instructions under review - FOLLOW THESE DETAILED STEPS AT YOUR OWN RISK)
+## DETAILED PROCEDURES
 
 ## Step 0. Pre-Check and Expectations
 
