@@ -56,10 +56,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 7) Perform Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
 8) Re-do Pressure Advance Calibration post-IS
 
-#
-#
-#
-#
+
 
 # Detailed procedures
 
