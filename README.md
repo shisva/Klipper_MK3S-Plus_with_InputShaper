@@ -37,12 +37,11 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
-- KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - [https://amzn.to/4bzgAzA](https://amzn.to/49QFR79)
-  - Optional, but recommended.
-  - Connects to the Rpi via USB
-  - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
-- Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
-- Another alternative: https://amzn.to/3VqvN0B
+- An accelerometer (optional, but recommended):
+  - KUSBA: Klipper USB Accelerometer (enables easier Input Shaping calibration) - [https://amzn.to/4bzgAzA](https://amzn.to/49QFR79)
+    - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
+  - Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
+  - Another alternative: https://amzn.to/3VqvN0B
 
 ## High-level Procedure Overview (see detailed guide below)
 **Do not print using PrusaSlicer until Step 7!**
