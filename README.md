@@ -64,7 +64,6 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 
 - Watch this YouTube video for a basic introduction to Klipper: https://www.youtube.com/watch?v=iNHta6zljoM
 - Depending on your familarity with Klipper, expect this full process (including tuning, which is the most time intensive) to take anywhere from 5-20 hours. This range is large because it depends on: 1) your own familarity with tuning procedures that Prusa normally takes care of for you, 2) your familiarity with Klipper, 3) your familiarity with tools like Raspberry Pi, SSH, and command line interfaces. It can also be on the high side if hardware misconfiguration contributes to issues such as bad vibrations in your printer, which will make Input Shaping calibration difficult until addresses. Please be prepared for this.
-- Throughtout this process, it is recommended you reference 
 - Get Z offset value from your current firmware (Menu -> Calibration -> Z-offset), you will need it for the Klipper config.
 - Your bed needs to be perpendicular (based on Prusa XYZ Calibration results). An uneven printer means you need to fix the physical hardware first and re-visit the assembly instructions. If not you will have to do the skew calibration before printing or you risk crashing your nozzle to the bed.
 - Some of the instructions will be direct links to external guides, which would not make sense to add here, particularly Ellis' 3D Printing guide.
