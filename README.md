@@ -50,11 +50,11 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 2) Create configuration using the Primary Configuration Files in this repo
 3) Flash firmware
     - Use USB method, serial method may only be necessary for some users
-4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
+4) Perform Config Checks 
 5) Customize PrusaSlicer for Klipper
-6) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
-7) Perform Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
-8) Re-do Pressure Advance Calibration post-IS
+6) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL)
+7) Perform Input Shaper calibrations and measurements - FYI, This step revealed several hardware misconfigurations/issues for me personally as a secondhand printer owner.
+8) Re-do Pressure Advance Calibration after enabling IS
 
 
 
