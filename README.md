@@ -30,9 +30,11 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
   - Possible hotends: Stock, Dragon ST, Dragon HF, Revo, many others are supported by Klipper itself.
   - Possible extruders: Stock, Bondtech BMG, many others are supported by Klipper itself.
   - As with Prusa firmware, non-stock extruders require more extensive modification of the configuration.
-- Raspberry Pi Zero 2 W - [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
-  - Raspberry Pi 3B+/4/5+ will also work.
-  - Raspberry Pi Zero W is not recommended.
+- Raspberry Pi (one of the following options)
+  - Raspberry Pi 3B+: https://amzn.to/3PuZN7D
+  - Raspberry Pi 4: https://amzn.to/4a2ZE3p
+  - Raspberry Pi Zero 2 W (requires USB adapter in the kit): [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
+  - Raspberry Pi Zero 1 W is not recommended, as it is underpowered.
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
@@ -84,7 +86,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 ## Step 0. Pre-Check and Expectations
 
 - Watch this YouTube video for a basic introduction to Klipper: https://www.youtube.com/watch?v=iNHta6zljoM
-- Depending on your familarity with Klipper, expect this full process (including tuning, which is the most time intensive) to take anywhere from 5-20 hours. This range is large because it depends on your own familarity with tuning procedures that Prusa normally takes care of for you. It can also be on the high side if hardware misconfiguration contributes to issues such as bad vibrations in your printer which will make Input Shaping calibration difficult until addresses. Please be prepared for this.
+- Depending on your familarity with Klipper, expect this full process (including tuning, which is the most time intensive) to take anywhere from 5-20 hours. This range is large because it depends on: 1) your own familarity with tuning procedures that Prusa normally takes care of for you, 2) your familiarity with Klipper, 3) your familiarity with tools like Raspberry Pi, SSH, and command line interfaces. It can also be on the high side if hardware misconfiguration contributes to issues such as bad vibrations in your printer, which will make Input Shaping calibration difficult until addresses. Please be prepared for this.
 - Throughtout this process, it is recommended you reference 
 - Get Z offset value from your current firmware (Menu -> Calibration -> Z-offset), you will need it for the Klipper config.
 - Your bed needs to be perpendicular (based on Prusa XYZ Calibration results). An uneven printer means you need to fix the physical hardware first and re-visit the assembly instructions. If not you will have to do the skew calibration before printing or you risk crashing your nozzle to the bed.
