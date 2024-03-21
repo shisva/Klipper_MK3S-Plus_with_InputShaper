@@ -104,7 +104,7 @@ make flash FLASH_DEVICE=/dev/serial/by-id/YOUR_UNIQUE_ID
 sudo service klipper start
 ```
 
-If this process fails, it is possible that you may need to connect via the Serial port, which is a more involved process, requiring some hardware modification. TO BE UPDATED FOR INSTRUCTIONS OR LINKS
+If this process fails, it is possible that you may need to connect via the Serial port, which is a more involved process, requiring some hardware modification. The Serial port approach is out-of-scope for this guide. Please search Google for the method or reach out on the Klipper Discord: https://discord.com/channels/431557959978450984/1205590905378312293
 
 ## Step 4. Perform configuration checks
 
