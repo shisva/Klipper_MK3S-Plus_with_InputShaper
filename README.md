@@ -31,8 +31,9 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
   - Raspberry Pi 3B+: https://amzn.to/3PuZN7D
   - Raspberry Pi 4: https://amzn.to/4a2ZE3p
   - Raspberry Pi Zero 2 W (requires USB adapter in the kit): [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
+  - MainSailOS also supports the Orange Pi Zero 2, and the Orange Pi 3 LTS /  4 LTS.
   - Raspberry Pi Zero 1 W is not recommended, as it is underpowered.
-  - Raspbeery Pi 5 will work great, but is likely overkill and comparatively expensive.
+
 
 - USB Type B male to USB Type A male cable (Came with your Prusa)
 - USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
