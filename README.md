@@ -43,7 +43,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 - Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
 - Another alternative: https://amzn.to/3VqvN0B
 
-## High-level Procedures
+## High-level Procedure Overview (see detailed guide below)
 **Do not print using PrusaSlicer until Step 7!**
 
 1) Install MainsailOS to your Raspberry Pi
@@ -52,23 +52,6 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
     - Use USB method, serial method may only be necessary for some users
 4) Perform Config Checks here, ESPECIALLY CALIBRATE PID: https://www.klipper3d.org/Config_checks.html (end-stops not applicable)
 5) Customize PrusaSlicer for Klipper
-    - Add MK3.5 printer to PrusaSlicer configuration
-    - Add a custom printer for Klipper to configuration (Bed images and vector files are found in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`)
-    - For Print Setting Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
-    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile
-    - Add start and end code to your new custom printer profile in Printer Settings, under "Custom G-Code":
-  Start Code
-  ```yml
-  M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
-  M109 S0 ; Prevents prusaslicer from prepending m109 to the gcode interfering with the macro
-  PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
-  ```
-
-  End Code
-
-  ```yml
-  PRINT_END
-  ```
 6) Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
 7) Perform Input Shaper calibrations and measurements - Revealed several hardware misconfigurations/issues for me personally
 8) Re-do Pressure Advance Calibration post-IS
@@ -78,7 +61,6 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 #
 #
 
-(Detailed instructions under review - FOLLOW THESE DETAILED STEPS AT YOUR OWN RISK)
 # Detailed procedures
 
 ## Step 0. Pre-Check and Expectations
