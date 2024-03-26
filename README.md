@@ -121,7 +121,8 @@ If this process fails, it is possible that you may need to connect via the Seria
 4. Copy the factory Prusa printing profiles:
    - For "Print Settings" Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile.
-   - Add start and end code to your new custom printer profile in your custom printer's "Printer Settings", under "Custom G-Code". You will not use the factory start and end g-code. The "PRINT_START" and "PRINT_END" commands activate the identically-named macros in your Macros.cfg file. Macros are like containers for their own set of Gcode which can be referenced more easily.
+   - Delete ALL existing data in ALL Custom G-Code boxes! Important!
+   - REPLACE the start and end code to your new custom printer profile in your custom printer's "Printer Settings", under "Custom G-Code". You will not use the factory start and end g-code. The "PRINT_START" and "PRINT_END" commands activate the identically-named macros in your Macros.cfg file. Macros are like containers for their own set of Gcode which can be referenced more easily.
   Start Code
   ```yml
   M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode interfering with the macro
