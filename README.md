@@ -4,7 +4,7 @@ Latest configuration file updates: 3/25/2024
 
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
 
-WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury. This guide and configuration files may contain errors or ommissions. 
+WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury. This guide and configuration files may contain errors or omissions. 
 
 **As of 3/21/2024 - Current discussion and live help can be found here, may need to join Klipper Discord first:** https://discord.com/channels/431557959978450984/1205590905378312293
 
