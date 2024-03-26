@@ -51,6 +51,8 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
   - Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
   - Another alternative: https://amzn.to/3VqvN0B
 
+As an Amazon Associate I earn from qualifying purchases.
+
 ## High-level Procedure Overview (see detailed guide below)
 **Do not print using PrusaSlicer until Step 7!**
 
@@ -174,7 +176,4 @@ If this process fails, it is possible that you may need to connect via the Seria
 3. From PruasSlicer, Configuration > Flash Firmware. Select your file and flash.
 
 
-#
-
-As an Amazon Associate I earn from qualifying purchases.
 
