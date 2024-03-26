@@ -1,6 +1,8 @@
 # Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 
-Latest configuration file updates: 3/25/2024
+Latest configuration file updates:
+3/26/2024 - Removed duplicative Pause/Cancel/Resume macros from macros.cfg
+3/25/2024 - Added "pullups" to einsy-rambo.cfg
 
 Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
 
