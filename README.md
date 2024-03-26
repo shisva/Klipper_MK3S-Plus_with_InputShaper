@@ -174,4 +174,7 @@ If this process fails, it is possible that you may need to connect via the Seria
 3. From PruasSlicer, Configuration > Flash Firmware. Select your file and flash.
 
 
+#
+
+As an Amazon Associate I earn from qualifying purchases.
 
