@@ -81,7 +81,9 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 4. In the Update Manager on the right, update everything. DO NOT UPDATE THESE IN THE FUTURE UNLESS YOU ARE CERTAIN THEY WILL NOT BREAK YOUR CONFIGURATION.
 5. In the Config folder, use the files found in this repository's Primary Configuration Files to replace the existing files: https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade/tree/main/1%20-%20Primary%20Configuration%20Files
    - NOTE: Either re-name Printer.Template.cfg, or copy/paste the contents into your own printer.cfg.
-6. Once all the files have been updated, hit the Power icon at the top right, and select "Restart".
+6. Edit the printer.cfg as necessary, instructions are inside of the printer.template.cfg file.
+7. DO NOT edit the other files unless you know what you are doing.
+8. Once all the files have been updated, hit the Power icon at the top right, and select "Restart".
 
 ## Step 3. Connect Prusa MK3S/+ physical printer, and flash the Klipper firmware to your printer
 
