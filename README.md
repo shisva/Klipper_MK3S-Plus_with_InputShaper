@@ -2,6 +2,8 @@
 
 Latest  updates:
 
+3/27/2024 - Filament runout code updated to prevent double pause
+
 3/26/2024 - Removed duplicative Pause/Cancel/Resume macros from macros.cfg
 
 3/25/2024 - Added "pullups" to einsy-rambo.cfg
