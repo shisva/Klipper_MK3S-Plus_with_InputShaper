@@ -13,7 +13,7 @@ Tired of seeing everyone upgrading to MK4s and feeling like you're missing out o
 
 WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury. This guide and configuration files may contain errors or omissions. 
 
-**As of 3/21/2024 - Current discussion and live help can be found here, may need to join Klipper Discord first:** https://discord.klipper3d.org/ in this channel: https://discord.com/channels/431557959978450984/1205590905378312293
+**As of 3/31/2024 - Current discussion and live help can be found here, may need to join Klipper Discord first:** https://discord.klipper3d.org/ in this channel: https://discord.com/channels/431557959978450984/1205590905378312293
 
 **There are several reasons you should try this upgrade:**
 1. **Speed** - As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer. It's all the rage right now in the 3D Printing community.
