@@ -2,6 +2,8 @@
 
 Latest  updates:
 
+4/1/2024 - Fixed missing tabs on PRUSA_LINE_PURGE in macros, and removed duplicate gcode_arc lines in einsy-rambo.
+
 3/27/2024 - Filament runout code updated to prevent double pause
 
 3/26/2024 - Removed duplicative Pause/Cancel/Resume macros from macros.cfg
