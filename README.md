@@ -2,6 +2,8 @@
 
 Latest  updates:
 
+4/2/2024 - Removed Mechanical Gantry Calibration macro. I'm not sure if it ever worked properly.
+
 4/1/2024 - Fixed missing tabs on PRUSA_LINE_PURGE in macros, and removed duplicate gcode_arc lines in einsy-rambo.
 
 3/27/2024 - Filament runout code updated to prevent double pause
