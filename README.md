@@ -60,7 +60,7 @@ Undoing this upgrade and returning to stock Prusa firmware can be completed in u
 As an Amazon Associate I earn from qualifying purchases.
 
 ## High-level Procedure Overview (see detailed guide below)
-**Do not print using PrusaSlicer until Step 7!**
+**Do not print using PrusaSlicer until Step 6!**
 
 1) Install MainsailOS to your Raspberry Pi
 2) Create configuration using the Primary Configuration Files in this repo
