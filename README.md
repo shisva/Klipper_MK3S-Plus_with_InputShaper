@@ -154,7 +154,7 @@ If this process fails, it is possible that you may need to connect via the Seria
   ```yml
   PRINT_END
   ```
-## Step 6. Tuning
+## Step 6. Tuning (Do not use PrusaSlicer until completeing this guide, or at least until getting to the EM step in this guide)
 1. Follow Ellis' Guide for primary tuning steps (NOT OPTIONAL): https://ellis3dp.com/Print-Tuning-Guide/articles/index_tuning.html
 2. This step is a critcal part of implementing Klipper and cannot be skipped
 3. For Pressure Advance and Extrusion Multiplier - It is recommended to add these values in to each individual Filament Profile in PrusaSlicer. PA can be added using the Custom G-Code menu, such as `SET_PRESSURE_ADVANCE ADVANCE=.055`
