@@ -164,8 +164,8 @@ If this process fails, it is possible that you may need to connect via the Seria
 1. To set some expectations, it is important that you run your input shaping tests on a very sturdy surface. Use of foam or any cushioning under your printer is not recommended, as it can skew the results, and you won't be using it after implementing IS anyway. This process, through the resonance measurements, can also reveal potential issues with hardware misconfiguration, such as loose components, loose belts, etc, which can be time consuming to troubleshoot, but will pay off later.
 2. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
 3. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
-4. KUSBA installation instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
-   - adxlmcu.cfg has already been provided in the repo, no need to add a new one for the KUSBA. I'm not familiar with other ADXL's, so these may need a different config.
+4. KUSBA installation instructions, excluding Steps 2.1 and 2.2: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+   - Steps 2.1 and 2.2: adxlmcu.cfg has already been provided in this repo, no need to add a new one for the KUSBA. I'm not familiar with other ADXL's, so these may need a different config.
    - May not be applicable, but if you run across any instructions elsewhere saying to install the Linux MCU, this is not necessary...we use the MCU on the KUSBA.
 5. Non-KUSBA - Please Google for relevant instructions.
 6. Links for KUSBA mounts
