@@ -166,7 +166,7 @@ If this process fails, it is possible that you may need to connect via the Seria
 3. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
 4. KUSBA installation instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
    - adxlmcu.cfg has already been provided in the repo, no need to add a new one for the KUSBA. I'm not familiar with other ADXL's, so these may need a different config.
-   - Installing the Linux MCU is NOT necessary...we use the MCU on the KUSBA
+   - May not be applicable, but if you run across any instructions elsewhere saying to install the Linux MCU, this is not necessary...we use the MCU on the KUSBA.
 5. Non-KUSBA - Please Google for relevant instructions.
 6. Links for KUSBA mounts
    - Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
