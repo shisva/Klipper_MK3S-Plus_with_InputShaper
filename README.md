@@ -161,15 +161,18 @@ If this process fails, it is possible that you may need to connect via the Seria
 4. Once you finish tuning, try printing some test prints using the STOCK MK3S+ PROFILES.
 
 ## Step 7. INPUT SHAPING :)
-1. To set some expectations, it is important that you run your input shaping tests on a very sturdy surface. Use of foam or any cushioning under your printer is not recommended, as it can skew the results, and you won't be using it after imlementing IS anyway. This process, through the resonance measurements, can also reveal potential issues with hardware misconfiguration, such as loose components, loose belts, etc, which can be time consuming to troubleshoot, but will pay off later.
-2. KUSBA instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+1. To set some expectations, it is important that you run your input shaping tests on a very sturdy surface. Use of foam or any cushioning under your printer is not recommended, as it can skew the results, and you won't be using it after implementing IS anyway. This process, through the resonance measurements, can also reveal potential issues with hardware misconfiguration, such as loose components, loose belts, etc, which can be time consuming to troubleshoot, but will pay off later.
+2. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
+3. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
+4. KUSBA installation instructions: https://github.com/xbst/KUSBA/blob/main/Docs/v2-Rampon-Firmware.md
+   - adxlmcu.cfg has already been provided in the repo, no need to add a new one for the KUSBA. I'm not familiar with other ADXL's, so these may need a different config.
    - Installing the Linux MCU is NOT necessary...we use the MCU on the KUSBA
-4. Links for KUSBA mounts
+5. Non-KUSBA - Please Google for relevant instructions.
+6. Links for KUSBA mounts
    - Nozzle mount (requires screws) https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
    - Fan mount https://www.printables.com/model/495459-kusba-accelerometer-universal-mount
    - Other mounts: https://www.printables.com/search/models?q=kusba&ctx=models
-5. It is recommended to follow this video for Input Shaping: https://www.youtube.com/watch?v=OoWQUcFimX8
-6. You can also refer to  more technical Klipper guidance here: https://www.klipper3d.org/Measuring_Resonances.html
+
 
 ## Step 8. Re-do Pressure Advance after finishing your IS setup
 8) Self Explainatory
