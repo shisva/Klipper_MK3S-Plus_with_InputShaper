@@ -131,16 +131,17 @@ If this process fails, it is possible that you may need to connect via the Seria
     
 ## Step 5. Customize PrusaSlicer for Klipper (DO NOT PRINT FROM THE SLICER UNTIL COMPLETING STEP 6!!)
 1. Add MK3.5 printer to PrusaSlicer configuration from the Configuration Wizard
-2. Add custom printer in the Configuration Wizard, use whatever name you like.
-   - Firmware Type = Klipper
-   - Bed Shape = 250mm x 210mm
-   - Import Bed Texture and Model Files - Located in `C:\Program Files\Prusa3D\PrusaSlicer\resources\profiles\PrusaResearch`
-   - Max Print Height = 210mm
-4. Copy the factory Prusa printing profiles:
+2. Copy the MK3.5 printer:
+   - Go to Dependencies > "Detach from System Preset"
+   - Rename the newly detached printer, you can now use this for your Klipper Printer Profile.
+   - Delete ALL existing data in ALL Custom G-Code boxes! Important!
+   - REPLACE the start and end code to your new custom printer profile in your custom printer's "Printer Settings", under "Custom G-Code". You will not use the factory start and end g-code. The "PRINT_START" and "PRINT_END" commands activate the identically-named macros in your Macros.cfg file. Macros are like containers for their own set of Gcode which can be referenced more easily.
+5. Copy the factory Prusa printing profiles:
    - For "Print Settings" Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile.
    - Delete ALL existing data in ALL Custom G-Code boxes! Important!
-   - REPLACE the start and end code to your new custom printer profile in your custom printer's "Printer Settings", under "Custom G-Code". You will not use the factory start and end g-code. The "PRINT_START" and "PRINT_END" commands activate the identically-named macros in your Macros.cfg file. Macros are like containers for their own set of Gcode which can be referenced more easily.
+   - IMPORTANT: In Print Settings > Advanced - Ensure G-Code Resolution is 0.0125 and NOT 0.008 from Prusa, as this may cause issues. 0.0008 has not been fully tested by us for Klipper. 
+
 
   Start Code
   ```yml
