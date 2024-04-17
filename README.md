@@ -2,6 +2,8 @@
 
 Latest  updates:
 
+4/17/2024 - Guidance update - In PrusaSlicer, Print Settings > Advanced: DISABLE "Arc Fitting" - G2/G3 should not be used with Klipper and is not necessary.
+
 4/2/2024 - Removed Mechanical Gantry Calibration macro. I'm not sure if it ever worked properly.
 
 4/1/2024 - Fixed missing tabs on PRUSA_LINE_PURGE in macros, and removed duplicate gcode_arc lines in einsy-rambo.
