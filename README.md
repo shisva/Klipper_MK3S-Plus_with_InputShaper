@@ -140,7 +140,7 @@ If this process fails, it is possible that you may need to connect via the Seria
    - For "Print Settings" Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile.
    - Delete ALL existing data in ALL Custom G-Code boxes! Important!
-   - IMPORTANT: In Print Settings > Advanced - Ensure G-Code Resolution is 0.0125 and NOT 0.008 from Prusa, as this may cause issues. 0.0008 has not been fully tested by us for Klipper. 
+   - IMPORTANT: In Print Settings > Advanced - DISABLE "Arc Fitting" - G2/G3 should not be used with Klipper and is not necessary.
 
 
   Start Code
