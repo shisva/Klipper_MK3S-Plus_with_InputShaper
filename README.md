@@ -141,6 +141,7 @@ If this process fails, it is possible that you may need to connect via the Seria
 5. Copy the factory Prusa printing profiles:
    - For "Print Settings" Presets, and Filament Setting Presets - Using the MK3.5 system presets, go to Dependencies > "Detach from System Preset"
    - Rename the newly detached presets, you can now use this for your Klipper Printer Profile.
+   - CRITICAL: For the Printer Profile, change "G-Code Flavor" to "Klipper".
    - Delete ALL existing data in ALL Custom G-Code boxes! Important!
    - IMPORTANT: In Print Settings > Advanced - DISABLE "Arc Fitting" - G2/G3 should not be used with Klipper and is not necessary.
 
