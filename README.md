@@ -1,65 +1,6 @@
 # Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 
-Latest  updates:
-
-4/17/2024 - Guidance update - In PrusaSlicer, Print Settings > Advanced: DISABLE "Arc Fitting" - G2/G3 should not be used with Klipper and is not necessary.
-
-4/2/2024 - Removed Mechanical Gantry Calibration macro. I'm not sure if it ever worked properly.
-
-4/1/2024 - Fixed missing tabs on PRUSA_LINE_PURGE in macros, and removed duplicate gcode_arc lines in einsy-rambo.
-
-3/27/2024 - Filament runout code updated to prevent double pause
-
-3/26/2024 - Removed duplicative Pause/Cancel/Resume macros from macros.cfg
-
-3/25/2024 - Added "pullups" to einsy-rambo.cfg
-
-
-Tired of seeing everyone upgrading to MK4s and feeling like you're missing out on the action? This project is an attempt to create simple, easy-to-follow documentation for performing an inexpensive, simple, and powerful upgrade to your Prusa MK3S/+. Originally based on work by dz0ny (https://github.com/dz0ny/klipper-prusa-mk3s).
-
-WARNING: This upgrade involves the use and installation of Klipper, which is a significantly different experience than Prusa's firmware. Think Klipper = Custom Android, vs. Prusa = Apple iOS. Klipper is powerful, but can be potentially dangerous if misconfigured. We take no responsibility for damage or injury. This guide and configuration files may contain errors or omissions. 
-
-**As of 3/31/2024 - Current discussion and live help can be found here, may need to join Klipper Discord first:** https://discord.klipper3d.org/ in this channel: https://discord.com/channels/431557959978450984/1205590905378312293
-
-**There are several reasons you should try this upgrade:**
-1. **Speed** - As you may know, Input Shaping can allow for substantial speed and print quality improvements to your printer. It's all the rage right now in the 3D Printing community.
-2. **Low Cost** - It's inexpensive, requiring just $50-100 in hardware, which is a reasonable savings compared to the Prusa MKS3.5 Upgrade Kit.
-3. **Simplicity** - We have structured our instructions and documentation to make this as simple as possible, despite the fact that Klipper is involved, and historically has been thought of as difficult to implement. Klipper is very powerful, and can be simple when implemented correctly.
-4. **Easy to Return to Stock** - Undoing this upgrade and returning to stock Prusa firmware takes just a few steps, and can be completed in under 10 minutes.
-5. **No Waste** - Your MK3S/+ Printer will not collect dust. Many in the Prusa community recommend either buying an MK4 while selling or keeping your MK3S. This upgrade allows you to keep your printer, while substantially increasing speed, and potentially increasing print quality.
-
-**How will we do this?**
-
-We will implement Input Shaping on your MK3S/+ with the use of Klipper. "YIKES, Klipper?! Isn't that super complicated?" No, while Klipper can be difficult to use, we've put in the work for you to allow for a simple  installation and configuration of Klipper. That doesn't necessarily mean it'll be easy, as implementing Klipper's Input Shaping can reveal hardware misconfigurations.
-
-**What if I need to return to stock?**
-
-Undoing this upgrade and returning to stock Prusa firmware can be completed in under 10 minutes. Please see the section "[Reverting to Stock Prusa Firmware](https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade/blob/main/README.md#reverting-to-stock-prusa-firmware)".
-
-## Hardware Required
-
-- Prusa MK3S or MK3S+
-  - While configuration files for this project are intended for use with the STOCK hotend and extruder. Other hotends and extruders listed below are possible to use with a modified configuration, but are out of the scope of this repository. For example configurations, please see the dz0ny repository, upon which this project is based: https://github.com/dz0ny/klipper-prusa-mk3s
-  - Possible hotends: Stock, Dragon ST, Dragon HF, Revo, many others are supported by Klipper itself.
-  - Possible extruders: Stock, Bondtech BMG, many others are supported by Klipper itself.
-  - As with Prusa firmware, non-stock extruders require more extensive modification of the configuration.
-- Raspberry Pi (one of the following options)
-  - Raspberry Pi 3B+: https://amzn.to/3PuZN7D
-  - Raspberry Pi 4: https://amzn.to/4a2ZE3p
-  - Raspberry Pi Zero 2 W (requires USB adapter in the kit): [https://amzn.to/3ODvStE](https://amzn.to/3TzhrIL)
-  - MainSailOS also supports the Orange Pi Zero 2, and the Orange Pi 3 LTS /  4 LTS.
-  - Raspberry Pi Zero 1 W is not recommended, as it is underpowered.
-
-
-- USB Type B male to USB Type A male cable (Came with your Prusa)
-- USB Type A female to MicroUSB male converter (if using a Pi Zero 2 W, included in kit linked above)
-- An accelerometer (enables easier Input Shaping calibration, optional, but recommended):
-  - KUSBA: Klipper USB Accelerometer: [https://amzn.to/4bzgAzA](https://amzn.to/49QFR79)
-    - NOTE 3/1/2024 - 3D-printed KUSBA mounts online worked but required modification to fit, the nozzle-mounted accelerometer could work better.
-  - Cheaper alternative: Nozzle-mountable USB Accelerometer: [https://amzn.to/4cg55gQ ](https://amzn.to/3Vgk6t9)
-  - Another alternative: https://amzn.to/3VqvN0B
-
-As an Amazon Associate I earn from qualifying purchases.
+Based on https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade
 
 ## High-level Procedure Overview (see detailed guide below)
 **Do not print using PrusaSlicer until Step 6!**
